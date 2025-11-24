@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Experience | CustomsHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/client-exp/client-exp.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/lets-connect.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <!-- CLIENT JOURNEY -->
+    <section class="client-journey">
+      <h1>Client Journey</h1>
+      <p>
+        From the moment you begin working with us, we ensure your operations run
+        smoothly with complete transparency, proactive communication, and a
+        seamless customs experience. Our goal is to simplify every step of the
+        import/export journey while keeping your business informed, supported,
+        and confident.
+      </p>
+      <img src="../Images/client-experience.jpg" alt="Support" />
+      <div class="journey-grid">
+        <div class="journey-step">
+          <h3>Understanding Your Needs</h3>
+          <p>
+            We begin by learning your business, products, shipping patterns, and
+            compliance requirements to deliver the right customs strategy.
+          </p>
+        </div>
+
+        <div class="journey-step">
+          <h3>Smooth Onboarding</h3>
+          <p>
+            Our experts guide you through setup, documentation, and regulatory
+            requirements with clarity and efficiency.
+          </p>
+        </div>
+
+        <div class="journey-step">
+          <h3>Real-Time Visibility</h3>
+          <p>
+            Track your shipments, monitor declarations, and stay updated on
+            compliance status at every stage.
+          </p>
+        </div>
+
+        <div class="journey-step">
+          <h3>Dedicated Support</h3>
+          <p>
+            Whether resolving issues, navigating regulations, or planning future
+            shipments, our experts support you with proactive communication.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER TESTIMONIALS -->
+    <section class="client-experience" data-experience="clientExp"></section>
+    <section class="our-world">
+      <h2>Our World</h2>
+
+      <div class="our-world-container">
+        <!-- LEFT SIDE: stats card -->
+        <div class="world-grid">
+          <div class="world-item circle bg1">
+            <img src="../Images/technology.png" alt="Technology" />
+          </div>
+
+          <div class="world-item circle bg2">
+            <img src="../Images/innovation.svg" alt="Innovation" />
+          </div>
+
+          <div class="world-item circle bg3">
+            <img src="../Images/compliance.png" alt="Compliance" />
+          </div>
+
+          <div class="world-item circle bg4">
+            <img src="../Images/global.svg" alt="Global Logistics" />
+          </div>
+        </div>
+        <!-- RIGHT SIDE: stats card -->
+        <div class="our-world-stats">
+          <div class="stat-item">
+            <h3>8 strategic</h3>
+            <p>locations worldwide.</p>
+          </div>
+
+          <div class="stat-item">
+            <h3>186 countries</h3>
+            <p>with dedicated teams.</p>
+          </div>
+
+          <div class="stat-item">
+            <h3>300+ experts</h3>
+            <p>by your side.</p>
+          </div>
+
+          <div class="stat-item">
+            <h3>47+ years</h3>
+            <p>of excellence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="lets-connect"></div>
+    <div id="footer-container"></div>
+
+    <script type="module">
+      import {
+        headerHTML,
+        footerHTML,
+        letsconnectHTML,
+      } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+      document.getElementById("lets-connect").innerHTML = letsconnectHTML;
+    </script>
+    <script src="/mock-data/client-exp.js"></script>
+    <script defer src="/client-exp/client-exp.js"></script>
+    <script src="/static/js/lets-connect.js"></script>
+  </body>
+</html>

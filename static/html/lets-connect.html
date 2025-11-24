@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canadian Customs Brokerage & Consulting | CustomsHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/lets-connect.css" />
+  </head>
+  <body>
+    <!-- CTA SECTION -->
+    <section id="quote" class="contact-section">
+      <div class="container">
+        <h2>Let's Connect</h2>
+        <p>
+          By submitting this form, you agree that CustomsHub may contact you
+          regarding your inquiry. Your information will not be shared with third
+          parties.
+        </p>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company *</label>
+            <input type="text" id="company" name="company" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Type of Service</label>
+              <select id="service" name="service">
+                <option>Customs Brokerage</option>
+                <option>Import / Export Consulting</option>
+                <option>Tariff Classification</option>
+                <option>Compliance Audits</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="industry">Industry</label>
+              <select id="industry" name="industry">
+                <option>-- Select --</option>
+                <option>Manufacturing</option>
+                <option>Technology</option>
+                <option>Retail</option>
+                <option>Healthcare</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <script defer src="services.js"></script>
+  </body>
+</html>

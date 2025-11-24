@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canadian Customs Brokerage & Consulting | CustomsHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sectors.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/lets-connect.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <!-- INTRO SECTION (Omnitrans Style) -->
+    <section class="sector-intro-block">
+      <h1 class="sector-title">Manufacturing</h1>
+      <img src="../Images/manufacturing.jpg" alt="Manufacturing Industry" />
+    </section>
+
+    <!-- MAIN SECTOR BODY -->
+    <section class="sector-content">
+      <h2>
+        The team, expertise, and technologies that support your manufacturing
+        supply chain.
+      </h2>
+
+      <p>
+        Manufacturers depend on precise, reliable, and efficient supply chains.
+        From raw materials and components to finished goods and specialized
+        equipment, we provide the customs expertise needed to keep production
+        moving without interruptions.
+      </p>
+
+      <p>
+        Our specialists assist with HS classification, valuation, tariff
+        treatments, NAFTA/CUSMA requirements, temporary imports, and
+        partner-government agency regulations. We help you avoid delays, reduce
+        compliance risk, and optimize your overall import and export strategy.
+      </p>
+
+      <p>
+        Whether you're managing just-in-time production or large-scale
+        industrial projects, we offer the visibility, coordination, and
+        dependable support your operations require for smooth cross-border
+        movement.
+      </p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="sector-testimonials" data-sector="manufacturing"></section>
+
+    <div id="lets-connect"></div>
+    <div id="footer-container"></div>
+
+    <script type="module">
+      import {
+        headerHTML,
+        footerHTML,
+        letsconnectHTML,
+      } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+      document.getElementById("lets-connect").innerHTML = letsconnectHTML;
+    </script>
+    <script src="/sectors/sectors.js"></script>
+    <script src="/mock-data/testimonials.js"></script>
+    <script src="/static/js/lets-connect.js"></script>
+  </body>
+</html>

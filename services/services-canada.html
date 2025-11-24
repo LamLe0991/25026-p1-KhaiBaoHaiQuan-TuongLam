@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canadian Customs Brokerage & Consulting | CustomsHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/lets-connect.css">
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          Canadian Customs<br />
+          Brokerage &amp;<br />
+          Consulting
+        </h1>
+        <p>
+          Expert guidance and seamless compliance for your imports and exports.
+        </p>
+        <a href="#quote" class="connect-btn">Let's Connect</a>
+      </div>
+      <div class="image">
+        <img
+          src="../Images/wp3270206-sap-wallpapers.jpg"
+          alt="Canadian customs brokerage operations"
+        />
+      </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="intro">
+      <div class="container intro-content">
+        <div class="intro-left">
+          <h1>
+            Streamlined.<br />
+            Compliant & Reliable.
+          </h1>
+          <div class="video-container">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/K01LvulhFRg"
+              title="Canada Customs Overview"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="intro-right">
+          <p>
+            Our licensed customs brokers deliver efficient, compliant, and
+            transparent import/export solutions across Canada. From tariff
+            classification to release management, we ensure your goods clear
+            customs quickly and cost-effectively.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SERVICES -->
+    <section class="core-services">
+      <div class="container">
+        <h1>Our Core Services</h1>
+
+        <!-- Tab Buttons -->
+        <div class="service-tabs">
+          <button class="service-tab-btn active" data-tab="clearance">
+            Import &amp; Export
+          </button>
+          <button class="service-tab-btn" data-tab="tariff">
+            Tariff &amp; Valuation
+          </button>
+          <button class="service-tab-btn" data-tab="consulting">
+            Consulting &amp; Audits
+          </button>
+        </div>
+
+        <!-- Service Cards -->
+        <div class="service-grid">
+          <div class="service-card active" id="clearance">
+            <h2>Import &amp; Export Clearance</h2>
+            <p>
+              Full service coverage for Canadian Border Services Agency (CBSA)
+              entries — commercial, personal, and temporary imports. We handle
+              all documentation, duty calculations, and release management to
+              ensure seamless clearance.
+            </p>
+          </div>
+          <div class="service-card" id="tariff">
+            <h2>Tariff Classification &amp; Valuation</h2>
+            <p>
+              Expert analysis of HS codes, origin determination, and valuation
+              under trade agreements such as CUSMA and CPTPP. Our specialists
+              ensure accurate classification to optimize duties and avoid
+              delays.
+            </p>
+          </div>
+          <div class="service-card" id="consulting">
+            <h2>Consulting &amp; Compliance Audits</h2>
+            <p>
+              End-to-end compliance review, documentation audits, and guidance
+              to minimize duties and prevent costly delays. We provide strategic
+              import planning tailored to your unique supply chain needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLIANCE SECTION -->
+    <section class="compliance">
+      <div class="container">
+        <h2>Trusted Expertise in Canadian Customs</h2>
+        <p>
+          Our experienced team works closely with CBSA and industry partners to
+          keep you compliant with the latest trade regulations. We monitor
+          regulatory changes, duty relief programs, and provide strategic import
+          planning tailored to your supply chain.
+        </p>
+      </div>
+    </section>
+
+    <div id="lets-connect"></div>
+    <div id="footer-container"></div>
+
+    <script type="module">
+      import { headerHTML, footerHTML, letsconnectHTML } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+      document.getElementById("lets-connect").innerHTML = letsconnectHTML;
+    </script>
+    <script defer src="services.js"></script>
+        <script src="/static/js/lets-connect.js"></script>
+  </body>
+</html>

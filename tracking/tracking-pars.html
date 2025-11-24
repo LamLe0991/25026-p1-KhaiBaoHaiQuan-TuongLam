@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARS Tracking | CustomsHub</title>
+    <link rel="stylesheet" href="tracking.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+  </head>
+  <div id="header-container"></div>
+  <body data-system="pars">
+    <div class="tracking-wrapper">
+      <h1 class="tracking-title">PARS Tracking</h1>
+      <p class="tracking-desc">
+        Enter a PARS number to view customs release status.
+      </p>
+
+      <form class="tracking-form">
+        <input
+          class="tracking-input"
+          type="text"
+          placeholder="Enter PARS Number (e.g., ABC123)"
+        />
+        <button class="tracking-submit">Track</button>
+      </form>
+
+      <div class="tracking-results"></div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script type="module">
+      import {
+        headerHTML,
+        footerHTML,
+        letsconnectHTML,
+      } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+    </script>
+
+    <script src="/mock-data/tracking-mock.js"></script>
+    <script type="module" src="tracking.js"></script>
+  </body>
+</html>

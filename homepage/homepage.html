@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customs Clearance. Simplified. | CustomsHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="homepage.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div class="hero">
+        <img
+          src="../Images/Image by Lee Robinson.avif"
+          alt="Customs operations illustration by Lee Robinson"
+        />
+        <div class="hero-text">
+          <p>We connect Viet Nam - Canada</p>
+          <p>We handle documentation</p>
+          <p>We relieve stress</p>
+        </div>
+      </div>
+    </div>
+    <div id="footer-container"></div>
+    <script type="module">
+      import { headerHTML, footerHTML } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+    </script>
+    <script src="homepage.js"></script>
+  </body>
+</html>

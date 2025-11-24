@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracking | CustomsHub</title>
+    <link rel="stylesheet" href="tracking.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/lets-connect.css">
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <main class="tracking-page">
+      <!-- HERO -->
+      <section class="tracking-hero">
+        <h1>Track your shipments</h1>
+        <p>Quick access to PARS and Vietnam customs tracking tools.</p>
+      </section>
+
+      <!-- CARDS -->
+      <section class="tracking-grid">
+        <!-- PARS CARD -->
+        <article class="tracking-card">
+          <div class="tracking-card-body">
+            <span class="tracking-tag">Canada</span>
+            <h2>PARS Tracking</h2>
+            <p>
+              Check the release status of commercial shipments entering Canada
+              using your PARS number.
+            </p>
+          </div>
+          <a
+            class="tracking-btn"
+            href="tracking-pars.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Go to PARS Tracker
+          </a>
+        </article>
+
+        <!-- VIETNAM CARD -->
+        <article class="tracking-card">
+          <div class="tracking-card-body">
+            <span class="tracking-tag">Vietnam</span>
+            <h2>Vietnam Customs Tracking</h2>
+            <p>
+              Access Vietnam’s customs systems to review declaration or shipment
+              status for imports and exports.
+            </p>
+          </div>
+          <a
+            class="tracking-btn"
+            href="tracking-vnacss.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Go to VNACCS
+          </a>
+          <!--
+            TODO: Replace with a specific VNACCS / eCustoms URL if you have one.
+          -->
+        </article>
+      </section>
+
+      <!-- OPTIONAL SUPPORT NOTE -->
+      <section class="tracking-help">
+        <h3>Need help with a shipment?</h3>
+        <p>
+          If your PARS or Vietnam declaration shows a delay or hold, our team
+          can review the status and help you move things forward.
+        </p>
+      </section>
+    </main>
+    <div id="lets-connect"></div>
+    <div id="footer-container"></div>
+
+    <script type="module">
+      import {
+        headerHTML,
+        footerHTML,
+        letsconnectHTML,
+      } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+      document.getElementById("lets-connect").innerHTML = letsconnectHTML;
+    </script>
+    <script src="/static/js/lets-connect.js"></script>
+  </body>
+</html>

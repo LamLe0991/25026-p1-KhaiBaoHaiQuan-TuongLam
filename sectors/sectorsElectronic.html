@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canadian Customs Brokerage & Consulting | CustomsHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sectors.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/lets-connect.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <!-- INTRO SECTION -->
+    <section class="sector-intro-block">
+      <h1 class="sector-title">Electronics</h1>
+      <img src="../Images/electronic.jpg" alt="Electronics Industry" />
+    </section>
+
+    <!-- MAIN SECTOR BODY -->
+    <section class="sector-content">
+      <h2>
+        The team, expertise, and technologies that support your electronics
+        supply chain.
+      </h2>
+
+      <p>
+        We consider electronics shipping both an art and a science. Whether
+        you're moving microprocessors, semiconductors, medical devices, telecom
+        equipment, or major appliances, we ensure your cargo receives the
+        precision, high-sensitivity handling, and compliance expertise it
+        deserves.
+      </p>
+
+      <p>
+        Our specialists navigate complex electronics classifications,
+        certifications, partner-government requirements, and security
+        protocols—ensuring your shipments move smoothly through customs with
+        minimal delays.
+      </p>
+
+      <p>
+        From high-level service and white-glove handling to real-time tracking
+        visibility, our technologies and knowledgeable team deliver safe and
+        timely clearance from origin to final destination.
+      </p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="sector-testimonials" data-sector="electronic"></section>
+    <div id="lets-connect"></div>
+    <div id="footer-container"></div>
+
+    <script type="module">
+      import {
+        headerHTML,
+        footerHTML,
+        letsconnectHTML,
+      } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+      document.getElementById("lets-connect").innerHTML = letsconnectHTML;
+    </script>
+    <script src="/mock-data/testimonials.js"></script>
+    <script type="module" src="/sectors/sectors.js"></script>
+    <script src="/static/js/lets-connect.js"></script>
+  </body>
+</html>

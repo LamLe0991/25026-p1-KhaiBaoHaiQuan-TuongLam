@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canadian Customs Brokerage & Consulting | CustomsHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sectors.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/lets-connect.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <!-- INTRO SECTION  -->
+    <section class="sector-intro-block">
+      <h1 class="sector-title">Fashion</h1>
+      <img src="../Images/fashion.jpg" alt="Fashion Industry" />
+    </section>
+
+    <!-- MAIN SECTOR BODY -->
+    <section class="sector-content">
+      <h2>
+        The team, expertise, and technologies that support your fashion supply
+        chain.
+      </h2>
+
+      <p>
+        Fashion logistics moves at the speed of consumer demand. Whether you're
+        shipping garments, footwear, accessories, textiles, or luxury goods, we
+        ensure your products move quickly, securely, and compliantly through
+        international borders.
+      </p>
+
+      <p>
+        Our specialists handle everything from tariff classification and fabric
+        composition analysis to duty optimization, labeling requirements, and
+        partner-government regulations—ensuring every shipment aligns with
+        fast-changing industry rules.
+      </p>
+
+      <p>
+        From high-volume seasonal shipments to time-sensitive product launches,
+        our team offers the visibility, reliability, and expertise you need to
+        keep your inventory flowing and your customers satisfied.
+      </p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="sector-testimonials" data-sector="fashion"></section>
+    <div id="lets-connect"></div>
+    <div id="footer-container"></div>
+
+    <script type="module">
+      import {
+        headerHTML,
+        footerHTML,
+        letsconnectHTML,
+      } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+      document.getElementById("lets-connect").innerHTML = letsconnectHTML;
+    </script>
+    <script src="/sectors/sectors.js"></script>
+    <script src="/mock-data/testimonials.js"></script>
+    <script src="/static/js/lets-connect.js"></script>
+  </body>
+</html>

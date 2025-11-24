@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietnamese Customs Brokerage & Consulting | CustomsHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/lets-connect.css" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          Vietnamese Customs<br />
+          Brokerage &amp;<br />
+          Consulting
+        </h1>
+        <p>
+          Clear your shipments through Vietnam Customs with accuracy, speed, and full compliance.
+        </p>
+        <a href="#quote" class="connect-btn">Let's Connect</a>
+      </div>
+
+      <div class="image">
+        <img
+          src="../Images/vietnam-customs.png"
+          alt="Vietnam customs brokerage service"
+        />
+      </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="intro">
+      <div class="container intro-content">
+        <div class="intro-left">
+          <h1>
+            Fast.<br />
+            Compliant & Reliable.
+          </h1>
+
+          <div class="video-container">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/AvUZmM5uYJw?list=RDAvUZmM5uYJw"
+              title="Vietnam Customs Overview"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="intro-right">
+          <p>
+            Our licensed Vietnamese customs specialists ensure your goods move smoothly through Vietnam Customs.
+            From VNACCS declarations to specialized import permits, we guarantee clear, accurate, and efficient
+            processing for all commercial shipments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SERVICES -->
+    <section class="core-services">
+      <div class="container">
+        <h1>Our Core Services</h1>
+
+        <!-- TAB BUTTONS -->
+        <div class="service-tabs">
+          <button class="service-tab-btn active" data-tab="clearance">
+            Import &amp; Export
+          </button>
+          <button class="service-tab-btn" data-tab="tariff">
+            HS Classification &amp; Compliance
+          </button>
+          <button class="service-tab-btn" data-tab="consulting">
+            Consulting &amp; Advisory
+          </button>
+        </div>
+
+        <!-- SERVICE CARDS -->
+        <div class="service-grid">
+          <!-- IMPORT & EXPORT -->
+          <div class="service-card active" id="clearance">
+            <h2>Import &amp; Export Clearance (VNACCS)</h2>
+            <p>
+              Full-service customs clearance through Vietnam’s VNACCS/VCIS system.  
+              We process commercial, temporary import/re-export, bonded warehouse transfers,
+              and special-category shipments. Our team manages declarations, duty/tax calculation,
+              and release coordination with port authorities and inspection agencies.
+            </p>
+          </div>
+
+          <!-- HS CLASSIFICATION -->
+          <div class="service-card" id="tariff">
+            <h2>HS Classification, Valuation &amp; Permits</h2>
+            <p>
+              Proper HS coding, origin determination, and taxable value calculations under 
+              Vietnamese Customs Law.  
+              We assist with MOIT/MARD/MOHS import permits, quality inspections, C/O forms 
+              (Form D, E, AK, CPTPP), and duty optimization under ASEAN and global FTAs.
+            </p>
+          </div>
+
+          <!-- CONSULTING -->
+          <div class="service-card" id="consulting">
+            <h2>Consulting, Audits &amp; Compliance Review</h2>
+            <p>
+              Professional guidance on Vietnamese customs regulations, post-clearance audits (PCA),
+              transfer pricing valuation, and compliance risk mitigation.  
+              We support businesses with supply-chain planning, documentation audits,
+              and strategies to minimize duties and avoid delays or penalties.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLIANCE SECTION -->
+    <section class="compliance">
+      <div class="container">
+        <h2>Trusted Expertise in Vietnamese Customs</h2>
+        <p>
+          Our experts work closely with Vietnam Customs, port authorities, and inspection bodies
+          to keep your business compliant.  
+          We stay updated on regulatory changes, specialized import requirements,
+          and free trade agreement opportunities to reduce costs and streamline your logistics.
+        </p>
+      </div>
+    </section>
+
+    <div id="lets-connect"></div>
+    <div id="footer-container"></div>
+
+    <script type="module">
+      import { headerHTML, footerHTML, letsconnectHTML } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+      document.getElementById("lets-connect").innerHTML = letsconnectHTML;
+    </script>
+
+    <script defer src="services.js"></script>
+    <script src="/static/js/lets-connect.js"></script>
+  </body>
+</html>

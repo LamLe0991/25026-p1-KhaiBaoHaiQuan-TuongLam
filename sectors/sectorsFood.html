@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canadian Customs Brokerage & Consulting | CustomsHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sectors.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/lets-connect.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <!-- INTRO SECTION -->
+    <section class="sector-intro-block">
+      <h1 class="sector-title">Food & Beverage</h1>
+      <img src="../Images/food.jpg" alt="Food and Beverage Industry" />
+    </section>
+
+    <!-- MAIN SECTOR BODY -->
+    <section class="sector-content">
+      <h2>
+        The team, expertise, and technologies that support your food and
+        beverage supply chain.
+      </h2>
+
+      <p>
+        Food and beverage products move through some of the most highly
+        regulated supply chains in the world. Whether you're shipping packaged
+        goods, fresh produce, ingredients, beverages, or specialty foods, we
+        ensure your shipments meet strict import requirements with speed and
+        accuracy.
+      </p>
+
+      <p>
+        Our specialists handle regulatory compliance, CFIA and FDA requirements,
+        ingredient declarations, labeling rules, permitting, and temperature-
+        sensitive logistics. We ensure your products enter the market safely and
+        without unnecessary delays.
+      </p>
+
+      <p>
+        From shelf-stable goods to perishable imports, we provide the expertise,
+        transparency, and proactive communication needed to keep your supply
+        chain fresh, compliant, and on schedule.
+      </p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="sector-testimonials" data-sector="food"></section>
+    <div id="lets-connect"></div>
+    <div id="footer-container"></div>
+
+    <script type="module">
+      import {
+        headerHTML,
+        footerHTML,
+        letsconnectHTML,
+      } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+      document.getElementById("lets-connect").innerHTML = letsconnectHTML;
+    </script>
+    <script src="/sectors/sectors.js"></script>
+    <script src="/mock-data/testimonials.js"></script>
+    <script src="/static/js/lets-connect.js"></script>
+  </body>
+</html>

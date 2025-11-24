@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canadian Customs Brokerage & Consulting | CustomsHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sectors.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/lets-connect.css">
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <!-- INTRO SECTION-->
+    <section class="sector-intro-block">
+      <h1 class="sector-title">Chemical</h1>
+      <img src="../Images/chemical.jpg" alt="Chemical Industry" />
+    </section>
+
+    <section class="sector-content">
+      <h2>
+        The team, expertise, and technologies that support your chemical supply
+        chain.
+      </h2>
+
+      <p>
+        Chemical products require exceptional care and compliance. Whether
+        you're shipping industrial solvents, raw materials, or specialized
+        compounds, we’ll ensure they receive the protection, accuracy, and
+        regulatory alignment they need.
+      </p>
+      <p>
+        Our experts navigate complex chemical classifications, partner
+        government agency requirements, safety documentation, and inspection
+        readiness — ensuring your shipments remain compliant from departure to
+        arrival.
+      </p>
+      <p>
+        From real-time tracking visibility to advanced compliance assessments,
+        we ensure safe and timely delivery at your final destination.
+      </p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="sector-testimonials" data-sector="chemical"></section>
+    <div id="lets-connect"></div>
+    <div id="footer-container"></div>
+
+    <script type="module">
+      import { headerHTML, footerHTML, letsconnectHTML } from "/static/static.js";
+      document.getElementById("header-container").innerHTML = headerHTML;
+      document.getElementById("footer-container").innerHTML = footerHTML;
+      document.getElementById("lets-connect").innerHTML = letsconnectHTML;
+    </script>
+    <script src="/mock-data/testimonials.js"></script>
+    <script type="module" src="/sectors/sectors.js"></script>
+    <script src="/static/js/lets-connect.js"></script>
+
+  </body>
+</html>
