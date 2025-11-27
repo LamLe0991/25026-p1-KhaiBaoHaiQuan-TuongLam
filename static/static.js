@@ -1,7 +1,7 @@
 export const headerHTML = `
     <header>
         <div class="header-container">
-            <a href="#" class="logo">
+            <a href="../index.html" class="logo">
                 <span class="logo-text">CustomsHub</span>
             </a>
 
